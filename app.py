@@ -7,7 +7,7 @@ st.set_page_config(page_title="eBay Titel Optimierer")
 st.title("eBay Titel Optimierer")
 st.write("Gib deinen eBay-Titel und die Beschreibung ein - und die KI optimiert sie für dich!")
 
-API_KEY = os.environ.get("
+API_KEY = os.environ.get("OPENAI_API_KEY")
 
 if not API_KEY:
     st.error("API-Key nicht gefunden! Bitte in den Secrets hinterlegen.")
